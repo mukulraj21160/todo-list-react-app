@@ -33,10 +33,12 @@ const style = makeStyles((theme) => ({
   main_card: {
     fontFamily: theme.typography.body1.fontFamily,
     [theme.breakpoints.up("xs")]: {
-      justifyContent: "space-evenly",
-      display: "flex",
-      borderRadius: "10px",
-      margin: "10% 0% 10% 0%",
+      color: "white",
+      width: "80%",
+      margin: "20% 0% 10% 0%",
+      marginLeft: "32px",
+      textAlign: "center",
+      height: "30%",
     },
 
     [theme.breakpoints.up("md")]: {
@@ -57,7 +59,7 @@ const style = makeStyles((theme) => ({
     fontFamily: theme.typography.body1.fontFamily,
     [theme.breakpoints.up("xs")]: {
       textAlign: "center",
-      fontSize: "32px",
+      fontSize: "22px",
       fontWeight: "bold",
       color: "brown",
     },
@@ -78,7 +80,7 @@ const style = makeStyles((theme) => ({
   textfield: {
     fontFamily: theme.typography.body1.fontFamily,
     [theme.breakpoints.up("xs")]: {
-      padding: "10px",
+      margin: "3px",
     },
 
     [theme.breakpoints.up("md")]: {
@@ -91,7 +93,7 @@ const style = makeStyles((theme) => ({
   btn: {
     fontFamily: theme.typography.body1.fontFamily,
     [theme.breakpoints.up("xs")]: {
-      margin: "5px",
+      margin: "3px",
       color: "green",
     },
 
