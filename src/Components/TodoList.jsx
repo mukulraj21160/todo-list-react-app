@@ -38,14 +38,13 @@ const style = makeStyles((theme) => ({
       margin: "20% 0% 10% 0%",
       marginLeft: "32px",
       textAlign: "center",
-      height: "30%",
     },
 
     [theme.breakpoints.up("md")]: {
-      justifyContent: "space-evenly",
-      display: "flex",
+      marginTop: "10%",
       borderRadius: "10px",
-      margin: "10% 0% 10% 0%",
+      marginLeft: "5px",
+      width: "50%",
     },
     [theme.breakpoints.up("lg")]: {
       justifyContent: "space-evenly",
