@@ -18,6 +18,11 @@ const style = makeStyles((theme) => ({
       height: "100vh",
       display: "flex",
     },
+    [theme.breakpoints.up("sm")]: {
+      backgroundColor: "#062845",
+      height: "100vh",
+      display: "flex",
+    },
 
     [theme.breakpoints.up("md")]: {
       backgroundColor: "#062845",
@@ -36,7 +41,12 @@ const style = makeStyles((theme) => ({
       color: "white",
       width: "80%",
       margin: "20% 0% 10% 0%",
-      marginLeft: "32px",
+      textAlign: "center",
+    },
+    [theme.breakpoints.up("sm")]: {
+      color: "white",
+      width: "80%",
+      margin: "20% 0% 10% 0%",
       textAlign: "center",
     },
 
@@ -62,6 +72,12 @@ const style = makeStyles((theme) => ({
       fontWeight: "bold",
       color: "brown",
     },
+    [theme.breakpoints.up("sm")]: {
+      textAlign: "center",
+      fontSize: "22px",
+      fontWeight: "bold",
+      color: "brown",
+    },
 
     [theme.breakpoints.up("md")]: {
       textAlign: "center",
@@ -81,6 +97,9 @@ const style = makeStyles((theme) => ({
     [theme.breakpoints.up("xs")]: {
       margin: "3px",
     },
+    [theme.breakpoints.up("sm")]: {
+      margin: "3px",
+    },
 
     [theme.breakpoints.up("md")]: {
       padding: "10px",
@@ -92,6 +111,10 @@ const style = makeStyles((theme) => ({
   btn: {
     fontFamily: theme.typography.body1.fontFamily,
     [theme.breakpoints.up("xs")]: {
+      margin: "3px",
+      color: "green",
+    },
+    [theme.breakpoints.up("sm")]: {
       margin: "3px",
       color: "green",
     },
@@ -126,8 +149,8 @@ const TodoList = () => {
   return (
     <div className={classes.main}>
       <Grid container item>
-        <Grid item lg={4} md={4} sm={2}></Grid>
-        <Grid item lg={4} md={4} sm={8} className={classes.main_card}>
+        <Grid item lg={4} md={4} sm={3} xs={1}></Grid>
+        <Grid item lg={4} md={4} sm={6} xs={10} className={classes.main_card}>
           <Card>
             <Typography className={classes.heading}>Todo List</Typography>
             <div className={classes.textfield}>
@@ -146,7 +169,7 @@ const TodoList = () => {
             })}
           </Card>
         </Grid>
-        <Grid item lg={4} md={4} sm={2}></Grid>
+        <Grid item lg={4} md={4} sm={3} xs={1}></Grid>
       </Grid>
     </div>
   );
