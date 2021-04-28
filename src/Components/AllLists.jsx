@@ -12,14 +12,12 @@ const style = makeStyles((theme) => ({
       textAlign: "left",
       padding: "0px 10px 0px 10px",
     },
-
     [theme.breakpoints.up("md")]: {
       display: "flex",
       justifyContent: "space-between",
       textAlign: "left",
       padding: "0px 10px 0px 10px",
     },
-
     [theme.breakpoints.up("lg")]: {
       display: "flex",
       justifyContent: "space-between",

@@ -14,53 +14,49 @@ const style = makeStyles((theme) => ({
   main: {
     fontFamily: theme.typography.body1.fontFamily,
     [theme.breakpoints.up("xs")]: {
-      backgroundColor: "#062845",
-      height: "100vh",
       display: "flex",
     },
     [theme.breakpoints.up("sm")]: {
-      backgroundColor: "#062845",
-      height: "100vh",
       display: "flex",
     },
 
     [theme.breakpoints.up("md")]: {
-      backgroundColor: "#062845",
-      height: "100vh",
       display: "flex",
     },
     [theme.breakpoints.up("lg")]: {
-      backgroundColor: "#062845",
-      height: "100vh",
       display: "flex",
     },
   },
   main_card: {
     fontFamily: theme.typography.body1.fontFamily,
     [theme.breakpoints.up("xs")]: {
-      color: "white",
-      width: "80%",
-      margin: "20% 0% 10% 0%",
+      display: "flex",
       textAlign: "center",
+      justifyContent: "space-evenly",
+      paddingBottom: "10px",
+      marginTop: "40%",
     },
     [theme.breakpoints.up("sm")]: {
-      color: "white",
-      width: "80%",
-      margin: "20% 0% 10% 0%",
+      display: "flex",
       textAlign: "center",
+      justifyContent: "space-evenly",
+      paddingBottom: "10px",
+      marginTop: "15%",
     },
 
     [theme.breakpoints.up("md")]: {
-      marginTop: "10%",
-      borderRadius: "10px",
-      marginLeft: "5px",
-      width: "50%",
+      display: "flex",
+      textAlign: "center",
+      justifyContent: "space-evenly",
+      paddingBottom: "10px",
+      marginTop: "15%",
     },
     [theme.breakpoints.up("lg")]: {
-      justifyContent: "space-evenly",
       display: "flex",
-      borderRadius: "10px",
-      margin: "10% 0% 10% 0%",
+      textAlign: "center",
+      justifyContent: "space-evenly",
+      paddingBottom: "10px",
+      marginTop: "15%",
     },
   },
 
@@ -70,61 +66,56 @@ const style = makeStyles((theme) => ({
       textAlign: "center",
       fontSize: "22px",
       fontWeight: "bold",
-      color: "brown",
+      color: "#2d4059",
     },
     [theme.breakpoints.up("sm")]: {
       textAlign: "center",
       fontSize: "22px",
       fontWeight: "bold",
-      color: "brown",
+      color: "#2d4059",
     },
 
     [theme.breakpoints.up("md")]: {
       textAlign: "center",
       fontSize: "32px",
       fontWeight: "bold",
-      color: "brown",
+      color: "#2d4059",
     },
     [theme.breakpoints.up("lg")]: {
       textAlign: "center",
       fontSize: "32px",
       fontWeight: "bold",
-      color: "brown",
+      color: "#2d4059",
     },
   },
   textfield: {
     fontFamily: theme.typography.body1.fontFamily,
     [theme.breakpoints.up("xs")]: {
-      margin: "3px",
+      paddingLeft: "10px",
     },
     [theme.breakpoints.up("sm")]: {
-      margin: "3px",
+      paddingLeft: "10px",
     },
-
     [theme.breakpoints.up("md")]: {
-      padding: "10px",
+      paddingLeft: "10px",
     },
     [theme.breakpoints.up("lg")]: {
-      padding: "10px",
+      paddingLeft: "10px",
     },
   },
   btn: {
     fontFamily: theme.typography.body1.fontFamily,
     [theme.breakpoints.up("xs")]: {
-      margin: "3px",
       color: "green",
     },
     [theme.breakpoints.up("sm")]: {
-      margin: "3px",
       color: "green",
     },
 
     [theme.breakpoints.up("md")]: {
-      margin: "5px",
       color: "green",
     },
     [theme.breakpoints.up("lg")]: {
-      margin: "5px",
       color: "green",
     },
   },
@@ -149,8 +140,8 @@ const TodoList = () => {
   return (
     <div className={classes.main}>
       <Grid container item>
-        <Grid item lg={4} md={4} sm={3} xs={1}></Grid>
-        <Grid item lg={4} md={4} sm={6} xs={10} className={classes.main_card}>
+        <Grid item lg={4} md={3} sm={2} xs={1}></Grid>
+        <Grid item lg={4} md={6} sm={8} xs={10} className={classes.main_card}>
           <Card>
             <Typography className={classes.heading}>Todo List</Typography>
             <div className={classes.textfield}>
@@ -169,7 +160,7 @@ const TodoList = () => {
             })}
           </Card>
         </Grid>
-        <Grid item lg={4} md={4} sm={3} xs={1}></Grid>
+        <Grid item lg={4} md={3} sm={2} xs={1}></Grid>
       </Grid>
     </div>
   );
