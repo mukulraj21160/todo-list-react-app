@@ -1,18 +1,14 @@
+import { ThemeProvider } from "@material-ui/styles";
 import React from "react";
 import TodoList from "./Components/TodoList";
-import { makeStyles } from "@material-ui/core";
-
-const style = makeStyles((theme) => ({
-  main: {
-    //
-  },
-}));
+import Theme from "./Theme/Theme";
 
 const App = () => {
-  const classes = style();
   return (
-    <div className={classes.main}>
-      <TodoList />
+    <div>
+      <ThemeProvider theme={Theme}>
+        <TodoList />
+      </ThemeProvider>
     </div>
   );
 };

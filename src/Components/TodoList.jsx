@@ -11,39 +11,12 @@ import AddBoxRoundedIcon from "@material-ui/icons/AddBoxRounded";
 import AllLists from "./AllLists";
 
 const style = makeStyles((theme) => ({
-  main: {
-    fontFamily: theme.typography.body1.fontFamily,
-    [theme.breakpoints.up("xs")]: {
-      display: "flex",
-    },
-    [theme.breakpoints.up("sm")]: {
-      display: "flex",
-    },
-
-    [theme.breakpoints.up("md")]: {
-      display: "flex",
-    },
-    [theme.breakpoints.up("lg")]: {
-      display: "flex",
-    },
-  },
   main_card: {
-    fontFamily: theme.typography.body1.fontFamily,
-    [theme.breakpoints.up("xs")]: {
-      display: "flex",
-      textAlign: "center",
-      justifyContent: "space-evenly",
-      paddingBottom: "10px",
-      marginTop: "40%",
-    },
-    [theme.breakpoints.up("sm")]: {
-      display: "flex",
-      textAlign: "center",
-      justifyContent: "space-evenly",
-      paddingBottom: "10px",
-      marginTop: "15%",
-    },
-
+    display: "flex",
+    textAlign: "center",
+    justifyContent: "space-evenly",
+    paddingBottom: "10px",
+    marginTop: "40%",
     [theme.breakpoints.up("md")]: {
       display: "flex",
       textAlign: "center",
@@ -61,20 +34,10 @@ const style = makeStyles((theme) => ({
   },
 
   heading: {
-    fontFamily: theme.typography.body1.fontFamily,
-    [theme.breakpoints.up("xs")]: {
-      textAlign: "center",
-      fontSize: "22px",
-      fontWeight: "bold",
-      color: "#2d4059",
-    },
-    [theme.breakpoints.up("sm")]: {
-      textAlign: "center",
-      fontSize: "22px",
-      fontWeight: "bold",
-      color: "#2d4059",
-    },
-
+    textAlign: "center",
+    fontSize: "22px",
+    fontWeight: "bold",
+    color: "#2d4059",
     [theme.breakpoints.up("md")]: {
       textAlign: "center",
       fontSize: "32px",
@@ -89,35 +52,10 @@ const style = makeStyles((theme) => ({
     },
   },
   textfield: {
-    fontFamily: theme.typography.body1.fontFamily,
-    [theme.breakpoints.up("xs")]: {
-      paddingLeft: "10px",
-    },
-    [theme.breakpoints.up("sm")]: {
-      paddingLeft: "10px",
-    },
-    [theme.breakpoints.up("md")]: {
-      paddingLeft: "10px",
-    },
-    [theme.breakpoints.up("lg")]: {
-      paddingLeft: "10px",
-    },
+    paddingLeft: "10px",
   },
   btn: {
-    fontFamily: theme.typography.body1.fontFamily,
-    [theme.breakpoints.up("xs")]: {
-      color: "green",
-    },
-    [theme.breakpoints.up("sm")]: {
-      color: "green",
-    },
-
-    [theme.breakpoints.up("md")]: {
-      color: "green",
-    },
-    [theme.breakpoints.up("lg")]: {
-      color: "green",
-    },
+    color: "green",
   },
 }));
 
@@ -138,10 +76,10 @@ const TodoList = () => {
 
   const classes = style();
   return (
-    <div className={classes.main}>
+    <div>
       <Grid container item>
-        <Grid item lg={4} md={3} sm={2} xs={1}></Grid>
-        <Grid item lg={4} md={6} sm={8} xs={10} className={classes.main_card}>
+        <Grid item lg={4} md={3} xs={1}></Grid>
+        <Grid item lg={4} md={6} xs={10} className={classes.main_card}>
           <Card>
             <Typography className={classes.heading}>Todo List</Typography>
             <div className={classes.textfield}>
@@ -160,7 +98,7 @@ const TodoList = () => {
             })}
           </Card>
         </Grid>
-        <Grid item lg={4} md={3} sm={2} xs={1}></Grid>
+        <Grid item lg={4} md={3} xs={1}></Grid>
       </Grid>
     </div>
   );

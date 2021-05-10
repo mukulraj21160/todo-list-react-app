@@ -5,42 +5,14 @@ import { makeStyles } from "@material-ui/core";
 
 const style = makeStyles((theme) => ({
   list: {
-    fontFamily: theme.typography.body1.fontFamily,
-    [theme.breakpoints.up("xs")]: {
-      display: "flex",
-      justifyContent: "space-between",
-      textAlign: "left",
-      padding: "0px 10px 0px 10px",
-    },
-    [theme.breakpoints.up("md")]: {
-      display: "flex",
-      justifyContent: "space-between",
-      textAlign: "left",
-      padding: "0px 10px 0px 10px",
-    },
-    [theme.breakpoints.up("lg")]: {
-      display: "flex",
-      justifyContent: "space-between",
-      textAlign: "left",
-      padding: "0px 10px 0px 10px",
-    },
+    display: "flex",
+    justifyContent: "space-between",
+    textAlign: "left",
+    padding: "0px 10px 0px 10px",
   },
   btn: {
-    fontFamily: theme.typography.body1.fontFamily,
-    [theme.breakpoints.up("xs")]: {
-      color: "red",
-      cursor: "pointer",
-    },
-
-    [theme.breakpoints.up("md")]: {
-      color: "red",
-      cursor: "pointer",
-    },
-
-    [theme.breakpoints.up("lg")]: {
-      color: "red",
-      cursor: "pointer",
-    },
+    color: "red",
+    cursor: "pointer",
   },
 }));
 
