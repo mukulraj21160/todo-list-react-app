@@ -18,17 +18,9 @@ const style = makeStyles((theme) => ({
     paddingBottom: "10px",
     marginTop: "40%",
     [theme.breakpoints.up("md")]: {
-      display: "flex",
-      textAlign: "center",
-      justifyContent: "space-evenly",
-      paddingBottom: "10px",
       marginTop: "15%",
     },
     [theme.breakpoints.up("lg")]: {
-      display: "flex",
-      textAlign: "center",
-      justifyContent: "space-evenly",
-      paddingBottom: "10px",
       marginTop: "15%",
     },
   },
@@ -39,16 +31,10 @@ const style = makeStyles((theme) => ({
     fontWeight: "bold",
     color: "#2d4059",
     [theme.breakpoints.up("md")]: {
-      textAlign: "center",
       fontSize: "32px",
-      fontWeight: "bold",
-      color: "#2d4059",
     },
     [theme.breakpoints.up("lg")]: {
-      textAlign: "center",
       fontSize: "32px",
-      fontWeight: "bold",
-      color: "#2d4059",
     },
   },
   textfield: {
